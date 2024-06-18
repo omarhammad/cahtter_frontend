@@ -66,6 +66,7 @@ function OtpForm({phone_number, pg_src}) {
             'pg_src': pg_src,
             'phone_number': phone_number,
             'otp_code': otpcode.reduce((acc,curr)=>{
+                console.log(acc)
                 return acc+=curr
             },'')
         })
